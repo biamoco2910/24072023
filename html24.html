@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vermelho{
+            color :rgb(214, 0, 0);
+        }
+        .azul{
+            color:rgb(0, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe?<br>
+    <script lang="JavaScript">
+        var littlePopCorn;
+
+        littlePopCorn = window.prompt("Qual seu nome?");
+        document.write(littlePopCorn + "<br>");
+    </script>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, laborum.<br>
+        
+    <script lang="JavaScript">
+        var n1f, n2f, resultado, k;
+
+        do{
+        n1f = parseFloat(window.prompt("Informe o primeiro número:","0"));
+        }
+        while(isNaN(n1f))
+
+        do{
+        n2f = parseFloat(window.prompt("Informe o segundo número:","0"));
+        }
+        while(isNaN(n1f))
+
+        resultado = n1f + n2f;
+        if (resultado<0){
+            document.write("<p class='vermelho'>")
+        }
+        else{
+            document.write("<p class='azul'>")
+        }
+        for(k=1; k<=10; k++)
+        document.write("Soma dos números:" + resultado + "<br>");
+    </script>
+</body>
+</html>
